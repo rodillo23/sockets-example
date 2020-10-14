@@ -3,7 +3,7 @@ const {io} = require('../server')
 io.on('connection', (client)=>{
     console.log('Usuario conectado')
 
-    client.emit('mensaje', {
+    client.emit('enviarMensaje', {
         usuario : 'Administrador',
         mensaje : 'Bienvenido a ésta aplicación'
     })
